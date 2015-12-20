@@ -1,0 +1,8 @@
+{
+    "require": {
+        "league/flysystem": "^1.0",
+        "ifsnop/mysqldump-php": "^2.1",
+        "league/flysystem-ziparchive": "^1.0",
+        "symfony/finder": "^3.0"
+    }
+}

@@ -33,7 +33,7 @@ $source2 = get_source($finder2);
 archive_backup($config, $source2);
 
 ftp_backup($config, [
-    '/backup/'.$config['database']['filename'].'.gz' => $config['database']['target'].'/'.$config['database']['filename'].'.gz',
+    '/backup/'.$config['database']['filename'].'.gz'  => $config['database']['target'].'/'.$config['database']['filename'].'.gz',
     '/backup/'.basename($config['archive']['target']) => $config['archive']['target'],
 ]);
 

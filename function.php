@@ -44,7 +44,7 @@ function database_backup($config)
 
         $dump = new Mysqldump($config['database']['dsn'], $config['database']['username'], $config['database']['password'], [
             'single-transaction' => false,
-            'compress' => $compress,
+            'compress'           => $compress,
         ]);
         $dump->start($file);
     } catch (\Exception $e) {
